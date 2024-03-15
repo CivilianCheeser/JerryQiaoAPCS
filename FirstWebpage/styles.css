@@ -1,0 +1,133 @@
+/* the rainbow effect is stolen from chat gpt */
+
+
+body {
+    background-color: black;
+    color: white;
+  }
+
+h1{
+    color: white;
+    font-size: 30px;
+    max-width: 100%;
+    width: auto;
+    height: 70px;
+    padding: 10px;
+    background-color: darkblue;
+    font-family: Baskerville, sans-serif;
+}
+
+h2{
+    font-size:30px;
+    color: white;
+}
+
+h3{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    background-color: black;
+}
+
+h4{
+    text-align: right;
+    display: block;
+}
+a {
+    color: white; /* Default link color */
+    transition: color 0.3s; /* Smooth color transition */
+  }
+
+  /* Visited link color */
+  a:visited {
+    color: white;
+  }
+
+
+  @keyframes rainbow {
+    0%   { color: red; }
+    16%  { color: orange; }
+    32%  { color: yellow; }
+    48%  { color: green; }
+    64%  { color: blue; }
+    80%  { color: indigo; }
+    100% { color: violet; }
+  }
+
+  /* Hover effect */
+  a:hover {
+    animation: rainbow 1.5s infinite; /* Apply rainbow animation on hover */
+  }
+
+  /* Active link color */
+  a:active {
+    color: green;
+  }
+
+div{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+}
+
+img{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, td, th{
+    color: white;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+    font-size:30px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: green;
+
+}
+button:hover{
+    color: black;
+    background-color: orange;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+#container > div{
+    background-color: springgreen;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    color: black;
+}
+#eg{
+  max-width: 50%;
+  width: auto;
+
+}
